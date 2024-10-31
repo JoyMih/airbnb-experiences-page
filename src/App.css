@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+} */
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 6rem;
+  padding: 1.5rem;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.card {
+  padding: 2rem;
+}
+
+.nav-bar {
+  display: flex;
+  padding: 2.2rem 2rem;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.airbnb-logo {
+  width: auto;
+  height: 40px;
+}
+
+.hero-component {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.2rem auto;
+}
+
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0rem;
+}
+
+.hero--logo {
+  display: flex;
+  flex: 1 1 230px;
+  max-width: 82%;
+  align-self: center;
+}
+
+.hero-header {
+  font-size: 40px;
+  font-weight: 900;
+  padding-left: 10%;
+}
+
+.hero-text {
+  font-size: medium;
+  padding-left: 10%;
+  margin-top: 0;
+  max-width: 80%;
+}
+
+/* .experience-section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 4.8rem 1rem 4.8rem;
+  justify-content: center;
+} */
+
+.experience-section>* {
+  max-width: 70%;
+  margin-top: -0.25rem;
+  margin-left: 0.25rem;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+.card p {
+  margin-bottom: -5px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.reviews>* {
+  padding-right: 5px;
+}
+
+.main-img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.star-img {
+  max-height: 25px;
+  padding-top: 0.7rem;
+}
+
+.review-details {
+  color: gray;
+}
+
+.sold-out {
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  width: 90px;
+  padding: 6.5px;
+  border-radius: 4px;
+  top: 25px;
+  left: 40px;
+  font-size: 15px;
+}
