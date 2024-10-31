@@ -1,17 +1,19 @@
 import PropTypes from "prop-types";
 
 function Card(props) {
+    console.log(props.openSpots)
     return (
         <div className="card">
-            {/* <p className="sold-out">SOLD OUT</p> */}
-            <img className="main-img" src={new URL(`../assets/images/${props.img}`, import.meta.url)} />
+        {props.openSpots===0 && <div className="card-badge bold-text">SOLD OUT</div>}
+            <img className="card-img" src={new URL(`../assets/images/${props.img}`, import.meta.url)} />
             <div className="reviews">
-                <img className="star-img" src={new URL("./../assets/images/star.png", import.meta.url)} />
-                <span>{props.rating}</span>
-                <span className="review-details">({props.reviewCount}) - USA</span>
+                <img className="rating-img" src={new URL("./../assets/images/star.png", import.meta.url)} />
+                <span>{props.rating} </span>
+                <span className="review-details">({props.reviewCount})  •</span>
+                <span className="review-details">{props.location}</span>
             </div>
             <p>{props.title}</p>
-            <p> <strong>From ${props.price} </strong> / person </p>
+            <p><span className="bold-text">From ${props.price}</span> / person </p>
         </div>
     )
 }
@@ -22,7 +24,8 @@ Card.propTypes = {
     reviewCount: PropTypes.number,
     location: PropTypes.string,
     title: PropTypes.string,
-    price: PropTypes.number
+    price: PropTypes.number,
+    openSpots: PropTypes.number
 }
 
 export default Card;
