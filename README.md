@@ -1,6 +1,7 @@
 # Airbnb Experiences Page Project
 
 This project was made for educational purpose based on the Scrimba course on Introduction to React: https://v2.scrimba.com/home 
+
 All images within this project are provided by the Scrimba site.
 
 # React + Vite
